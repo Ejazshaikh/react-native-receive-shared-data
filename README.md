@@ -65,8 +65,7 @@ class App extends Component {
         // Things you want to do...
       }
     }
-    console.log('data', data);
-    this.setState({ data });
   }
+ }
 ```
   
