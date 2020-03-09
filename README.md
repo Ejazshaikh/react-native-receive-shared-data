@@ -55,13 +55,13 @@ class App extends Component {
   }
 
   async checkForSharedData() {
-    const data = await RNReceiveSharedData.getSharedData();
-    if (data) {
-      if (data.type === 'TEXT') {
+    const response = await RNReceiveSharedData.getSharedData();
+    if (response) {
+      if (response.type === 'TEXT') {
         // Things you want to do...
-      } else if (data.type === 'IMAGE') {
+      } else if (response.type === 'IMAGE') {
         // Things you want to do...
-      } else if (data.type === 'IMAGES') {
+      } else if (response.type === 'IMAGES') {
         // Things you want to do...
       }
     }
